@@ -32,5 +32,12 @@
     "email": "deniscraciun@gmail.com",
     "address": "91 blake's farm road",
     "phone": "325601548124"
+  },
+  {
+    "id": 4,
+    "name": "Denis",
+    "email": "deniscraciun@gmail.com",
+    "address": "91 blakes farm road",
+    "phone": "3240512924"
   }
 ]

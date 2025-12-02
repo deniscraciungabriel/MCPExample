@@ -115,6 +115,7 @@ server.tool(
 server.tool(
   "create-random-user",
   "Create a random user with fake data",
+  {},
   {
     title: "Create Random User",
     readOnlyHint: false,
