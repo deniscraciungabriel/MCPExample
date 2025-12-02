@@ -4,8 +4,10 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node build/server.js",
-    "dev": "tsx watch src/server.ts"
+    "start:server": "node build/server.js",
+    "start:client": "node build/client.js",
+    "dev:server": "tsx watch src/server.ts",
+    "dev:client": "tsx src/client.ts"
   },
   "keywords": [],
   "author": "",

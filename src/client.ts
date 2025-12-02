@@ -2,7 +2,7 @@ import "dotenv/config"
 import { createGoogleGenerativeAI } from "@ai-sdk/google"
 import { confirm, input, select } from "@inquirer/prompts"
 import { Client } from "@modelcontextprotocol/sdk/client/index.js"
-import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js"
+import { SSEClientTransport } from "@modelcontextprotocol/sdk/client/sse.js"
 import {
   CreateMessageRequestSchema,
   Prompt,
@@ -19,11 +19,9 @@ const mcp = new Client(
   { capabilities: { sampling: {} } }
 )
 
-const transport = new StdioClientTransport({
-  command: "node",
-  args: ["build/server.js"],
-  stderr: "ignore",
-})
+const transport = new SSEClientTransport(
+  new URL("http://localhost:3000/sse")
+)
 
 const google = createGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY,

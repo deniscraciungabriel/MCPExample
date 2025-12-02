@@ -12,5 +12,25 @@
       "zip": "94107",
       "country": "USA"
     }
+  },
+  {
+    "id": 2,
+    "firstName": "Eleanor",
+    "lastName": "Vance",
+    "email": "eleanor.vance78@example.com",
+    "address": {
+      "street": "456 Oak Avenue",
+      "city": "Springfield",
+      "state": "IL",
+      "zipCode": "62704"
+    },
+    "phoneNumber": "217-555-9876"
+  },
+  {
+    "id": 3,
+    "name": "denis",
+    "email": "deniscraciun@gmail.com",
+    "address": "91 blake's farm road",
+    "phone": "325601548124"
   }
 ]

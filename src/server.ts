@@ -251,7 +251,7 @@ async function main() {
     await transport.handlePostMessage(req, res)
   })
 
-  app.listen(PORT, () => {
+  app.listen(PORT, "0.0.0.0", () => {
     console.log(`MCP server listening on http://localhost:${PORT}`)
   })
 }
