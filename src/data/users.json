@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "firstName": "Avery",
+    "lastName": "Marshall",
+    "email": "avery.marshall@example.com",
+    "phone": "+1-415-555-0179",
+    "address": {
+      "street": "4829 Willow Creek Drive",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94107",
+      "country": "USA"
+    }
+  }
+]
